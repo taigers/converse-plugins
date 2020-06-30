@@ -1,3 +1,3 @@
 # Converse Plugins
 
-[Documentation](https://iconverse-dev.taiger.io/converse-plugin-docs/)
+[Documentation](https://github.com/taigers/converse-plugins/blob/master/md/src/SUMMARY.md)
