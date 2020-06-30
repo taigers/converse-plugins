@@ -1,0 +1,16 @@
+.classpath
+.project
+.settings
+target
+.DS_Store
+.idea
+*.iml
+node_modules
+
+# .vs folder is created for vs live sessions
+.vs/*
+# ignore vscode workspace files
+*.code-workspace
+
+/.metadata/
+.DS_Store
