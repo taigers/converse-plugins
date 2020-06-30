@@ -61,8 +61,20 @@
   </build>
   ```
 
-- Add the following dependency to the `<dependencies>` block. This library contains the necessary building blocks to get started with Service Actions. Get in touch with our developers to get the latest version.
+- Go to [Converse Plugins](https://github.com/taigers/converse-plugins) repository. Download `converse-connector-engine-common-0.0.1-SNAPSHOT.jar` from the `libs` folder. This library contains the necessary building blocks to get started with Service Actions. Get in touch with our developers to get the latest version.
 
+- Install this plugin to your local maven repository. Run this in your terminal. Asssuming you've downloaded the jar to your `~/Downloads` folder. Remember to replace `<your-username>` with your actual username.
+  ```sh
+  mvn install:install-file \
+      -Dfile=/Users/<your-username>/Downloads/converse-connector-engine-common-0.0.1-SNAPSHOT.jar \
+      -DgroupId=com.taiger.converse \
+      -DartifactId=converse-connector-engine-common \
+      -Dversion=0.0.1-SNAPSHOT \
+      -Dpackaging=jar \
+      -DgeneratePom=true
+  ```
+
+- Add the following dependency to the `<dependencies>` block in the generated project's `pom.xml` file
     ```xml
     <dependency>
         <groupId>com.taiger.converse</groupId>
