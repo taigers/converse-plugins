@@ -1,0 +1,6 @@
+[book]
+authors = ["Kiran Sebastian"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Converse Plugins"
