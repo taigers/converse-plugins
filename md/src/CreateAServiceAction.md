@@ -1,6 +1,6 @@
 # Create a Service Action
 
-In your preferred package, say com.your.company.service, create a new Java source file. You may use any naming conventions. Lets first build a service action that is able to do simple math. 
+In your preferred package, say com.your.company.service, create a new Java source file called `CalculatorService.java` under the package `com.taiger.converse.adaptor`. You may use any naming conventions for the class name. But the class should be located within the `com.taiger.converse.adaptor` base package.  Lets first build a service action that is able to do simple math.
 
 ```java
 public ServiceActionResult addition(String num1, String num2) {
@@ -34,6 +34,8 @@ public ServiceActionResult addition(String num1, String num2) {
   return ServiceActionResult.ofData(dataOutput);
 }
 ```
+
+> You are free to choose any package structure for your supporting classes. But any Service Action that should be scanned and recognized by the middleware should be located within the `com.taiger.converse.adaptor` base package.
 
 Using the provided annotations, we are providing metadata to the converse connector engine about this service action so that it can be rendered and used in the Converse platform while configuring a service action. 
 
