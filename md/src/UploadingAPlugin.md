@@ -1,6 +1,6 @@
 # Uploading a Plugin
 
-In order to upload a plugin we will navigate to [converse middleware portal](https://iconverse-dev.taiger.io/cmw-ui).
+In order to upload a plugin, first navigate to Converse Middleware Services page (found at <converse-installation-url>/cmw-ui/#/services)
 
 - Click on “Services” on the left sidebar
 - Click the “Add” button next to the header
