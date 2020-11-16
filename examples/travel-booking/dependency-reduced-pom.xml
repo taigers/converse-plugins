@@ -145,12 +145,11 @@
     <dependency>
       <groupId>com.taiger.middleware</groupId>
       <artifactId>middleware-adaptor-common</artifactId>
-      <version>0.0.1</version>
+      <version>0.0.2-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
   <properties>
     <java.version>11</java.version>
-    <common.dependency.version>0.0.1</common.dependency.version>
   </properties>
 </project>
