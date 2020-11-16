@@ -1,4 +1,4 @@
-package com.taiger.converse.adaptor.demo;
+package com.taiger.middleware.adaptor.demo;
 
 public class TravelBooking {
 

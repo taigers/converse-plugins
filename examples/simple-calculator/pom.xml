@@ -17,9 +17,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.taiger.converse</groupId>
-			<artifactId>converse-connector-engine-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>com.taiger.middleware</groupId>
+			<artifactId>middleware-adaptor-common</artifactId>
+			<version>0.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>

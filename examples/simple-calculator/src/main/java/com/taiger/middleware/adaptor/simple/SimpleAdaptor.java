@@ -1,4 +1,4 @@
-package com.taiger.converse.adaptor.simple;
+package com.taiger.middleware.adaptor.simple;
 
 public class SimpleAdaptor {
 

@@ -1,9 +1,9 @@
-package com.taiger.converse.adaptor.simple.service;
+package com.taiger.middleware.adaptor.simple.service;
 
-import com.taiger.converse.engine.common.annotations.DataOutput;
-import com.taiger.converse.engine.common.annotations.Input;
-import com.taiger.converse.engine.common.annotations.ServiceAction;
-import com.taiger.converse.engine.common.dto.ServiceActionResult;
+import com.taiger.middleware.adaptor.common.annotations.DataOutput;
+import com.taiger.middleware.adaptor.common.annotations.Input;
+import com.taiger.middleware.adaptor.common.annotations.ServiceAction;
+import com.taiger.middleware.adaptor.common.payload.converse.latest.component.ServiceActionResult;
 import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
