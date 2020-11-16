@@ -61,15 +61,15 @@
   </build>
   ```
 
-- Go to [Converse Plugins](https://github.com/taigers/converse-plugins) repository. Download `converse-connector-engine-common-0.0.1-SNAPSHOT.jar` from the `libs` folder. This library contains the necessary building blocks to get started with Service Actions. Get in touch with our developers to get the latest version.
+- Go to [Converse Plugins](https://github.com/taigers/converse-plugins) repository. Download `middleare-adaptor-common-0.0.2-SNAPSHOT.jar` from the `libs` folder. This library contains the necessary building blocks to get started with Service Actions. Get in touch with our developers to get the latest version.
 
 - Install this plugin to your local maven repository. Run this in your terminal. Asssuming you've downloaded the jar to your `~/Downloads` folder. Remember to replace `<your-username>` with your actual username.
   ```sh
   mvn install:install-file \
-      -Dfile=/Users/<your-username>/Downloads/converse-connector-engine-common-0.0.1-SNAPSHOT.jar \
+      -Dfile=/Users/<your-username>/Downloads/middleware-adaptor-common-0.0.2-SNAPSHOT.jar \
       -DgroupId=com.taiger.converse \
-      -DartifactId=converse-connector-engine-common \
-      -Dversion=0.0.1-SNAPSHOT \
+      -DartifactId=middleware-adaptor-common \
+      -Dversion=0.0.2-SNAPSHOT \
       -Dpackaging=jar \
       -DgeneratePom=true
   ```
@@ -78,8 +78,8 @@
     ```xml
     <dependency>
         <groupId>com.taiger.converse</groupId>
-        <artifactId>converse-connector-engine-common</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <artifactId>middleware-adaptor-common</artifactId>
+        <version>0.0.2-SNAPSHOT</version>
     </dependency>
     ```
 

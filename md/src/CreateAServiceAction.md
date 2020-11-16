@@ -1,6 +1,6 @@
 # Create a Service Action
 
-In your preferred package, say com.your.company.service, create a new Java source file called `CalculatorService.java` under the package `com.taiger.converse.adaptor`. You may use any naming conventions for the class name. But the class should be located within the `com.taiger.converse.adaptor` base package.  Lets first build a service action that is able to do simple math.
+Create a new Java source file called `CalculatorService.java` under the package `com.taiger.middleware.adaptor`. You may use any naming conventions for the class name or subpackages. But the class should be located within the `com.taiger.middleware.adaptor` base package.  Lets first build a service action that is able to do simple math.
 
 ```java
 public ServiceActionResult addition(String num1, String num2) {
@@ -28,14 +28,23 @@ Once we have the business logic ready, we have to annotate it. This is so that t
     },
     dataOutputs = @DataOutput(name = "result", description = "Sum of num1 and num2"))
 public ServiceActionResult addition(String num1, String num2) {
+
+  // Convert string inputs to integer for calculation
   int result = Integer.parseInt(num1) + Integer.parseInt(num2);
+  
+  // Convert integer back to string to send to converse
   String resultStr = String.valueOf(result);
+  
+  // Define a map which will hold the result
+  // You can add additional key-value pairs as necessary
   Map<String, Object> dataOutput = Map.of("result", resultStr);
+  
+  // Return a data output with the map
   return ServiceActionResult.ofData(dataOutput);
 }
 ```
 
-> You are free to choose any package structure for your supporting classes. But any Service Action that should be scanned and recognized by the middleware should be located within the `com.taiger.converse.adaptor` base package.
+> You are free to choose any package structure for your supporting classes. But any Service Action that should be scanned and recognized by the middleware should be located within the `com.taiger.middleware.adaptor` base package.
 
 Using the provided annotations, we are providing metadata to the converse connector engine about this service action so that it can be rendered and used in the Converse platform while configuring a service action. 
 
